@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ----------------header, banner---------------- */
+
+#header {
+    height: 60px;
+    background-color: #000000;
+}
+
+#header .image {
+    width: 30%;
+    padding-left: 100px;
+}
+
+#header .menu {
+    float: right;
+    width: 70%;
+}
+
+#header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header .menu ul li {
+    float: left;
+    position: relative;
+    margin: 0 10px;
+}
+
+#header .menu ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 15px;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#header .menu ul li:hover::after {
+    width: 100%;
+}
+
+#header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#header .menu ul li ul li {
+    display: none;
+}
+
+.category {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.header-cha {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+.header-con {
+    text-align: center;
+    margin: 30px;
+}
+
+.header-con ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-con ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.header-con ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -8px;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(41, 40, 40);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.header-con ul li:hover::after {
+    width: 80%;
+}
+
+.header-con ul li a {
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(70, 69, 69);
+}
+
+
+/* --------------Sản phẩm nổi bật---------------- */
+
+.product-flex .pro-block-nam,
+.pro-block-nu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pro-block {
+    margin: 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0.5px solid rgb(209, 203, 203);
+}
+
+.pro-block img {
+    width: 200px;
+}
+
+.pro-block-nu {
+    display: none;
+}
+
+
+/* ------------------List trang phuc-------------------- */
+
+.list-category {
+    padding: 0 150px;
+}
+
+.manswear {
+    position: relative;
+    padding: 0 15px;
+}
+
+.manswear img {
+    height: 650px;
+    width: 100%;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.gift-item {
+    position: relative;
+}
+
+.gift img {
+    height: 310px;
+    width: 100%;
+}
+
+.item-category_title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 24.65px;
+}
+
+.item-category_title::after {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    left: 3px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-4 {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+}
+
+
+/* ------------banner 2 ------------- */
+
+.banner2 {
+    width: 100%;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.banner2-content {
+    position: relative;
+    color: white;
+    padding: 50px 145px;
+    font-size: 30px;
+}
+
+.banner2-content h3,
+h2,
+p,
+input {
+    margin: 20px;
+}
+
+p {
+    width: 1000px;
+    font-size: 23px;
+}
+
+input {
+    padding: 10px;
+    background-color: rgb(248, 71, 39);
+    border: none;
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: red;
+}
+
+.section-news {
+    height: 700px;
+}
+
+.news-bg {
+    position: absolute;
+    width: 100%;
+}
+
+.news-bg img {
+    height: 700px;
+    width: 100%;
+}
+
+.news-content {
+    position: relative;
+}
+
+.news-header-tiltle {
+    width: 100%;
+    margin: 50px 215px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.news-header-tiltle::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: rgb(250, 5, 5);
+    position: absolute;
+    top: 85px;
+    left: 217px;
+}
+
+.news-content .news-header,
+.news-content-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-content-block {
+    width: 100%;
+    position: absolute;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+.news-content-block-con {
+    border: 0.5px solid;
+    width: 350px;
+    margin: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.news-content-block-con img {
+    width: 350px;
+    height: 220px;
+}
+
+.news-content-block-con p {
+    font-size: 15px;
+    width: 325px;
+    margin: 0;
+}
+
+.news-content-block-con p,
+h5,
+button {
+    padding: 5px;
+    margin: 10px;
+}
+
+.news-content-but {
+    border: none;
+    color: #555454;
+    background-color: white;
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+
+/* ----------------------------Thanh tuu--------------------- */
+
+.thanh-tuu {
+    height: 250px;
+    width: 100%;
+    background-image: url(assets/image/bg-footer.jpg);
+    position: relative;
+}
+
+.thanh-tuu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.thanh-tuu-content-con {
+    color: #fff;
+    width: 300px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.thanh-tuu-content-con p {
+    display: inline-block;
+    width: 320px;
+}
+
+.thanh-tuu-content-con .p1 {
+    font-size: 50px;
+}
+
+
+/*--------Logo nhà tài trợ-------------  */
+
+.footer-logo .footer-logo-relative {
+    height: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.logo-1,
+.logo-2,
+.logo-3,
+.logo-4,
+.logo-5 {
+    width: 205px;
+    height: 65px;
+}
+
+.logo img {
+    width: 175px;
+    height: 30px;
+}
+
+
+/*-------------------- Footer -------------------*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer {
+    background-color: rgb(70, 69, 69);
+}
+
+footer .container .noi-dung {
+    margin-right: 30px;
+    width: 300px;
+}
+
+.noi-dung h2 {
+    margin: 0;
+}
+
+footer .container .noi-dung.about {
+    width: 40%;
+}
+
+footer .container .noi-dung h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .noi-dung h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p {
+    color: #999;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.links {
+    position: relative;
+    width: 25%;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.contact img {
+    width: 100px;
+    height: 60px;
+}
+
+.contact {
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.input-mail {
+    display: flex;
+    margin: 15px 0;
+}
+
+.input-mail input {
+    background-color: white;
+    height: 40px;
+    margin: 0;
+}
+
+.input-mail button {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 65px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.noi-dung span {
+    color: #999;
+}
+
+
+/* --------------- Cop right ------------*/
+
+.footer-copright {
+    background-color: #111111;
+    height: 48px;
+}
+
+.footer-cop-content {
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+}
+
+.footer-cop-content img {
+    width: 18px;
+    height: 18px;
+}
